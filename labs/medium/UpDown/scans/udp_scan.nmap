@@ -1,0 +1,9 @@
+# Nmap 7.92 scan initiated Thu Sep 22 22:02:22 2022 as: nmap -Pn -sU -sC -oA udp_scan 10.10.11.177
+Nmap scan report for updown.htb (10.10.11.177)
+Host is up (0.18s latency).
+Not shown: 998 closed udp ports (port-unreach)
+PORT      STATE         SERVICE
+68/udp    open|filtered dhcpc
+19639/udp open|filtered unknown
+
+# Nmap done at Thu Sep 22 22:20:19 2022 -- 1 IP address (1 host up) scanned in 1077.24 seconds

@@ -1,0 +1,1610 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>FFUF Report - </title>
+
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+	/>
+	<link 
+	  rel="stylesheet" 
+	  type="text/css" 
+	  href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"
+	/>
+  
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">FFUF</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+
+    <main class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center ">FFUF Report</h1>
+        <div class="row center">
+
+		<pre>ffuf -w /usr/share/seclists/Discovery/Web-Content/dirsearch.txt:FUZZ -u http://siteisup.htb/dev/FUZZ -of html -o ffuf-dirsearch-siteisup_dev.html -e .php -c</pre>
+		<pre>2022-09-23T14:24:50&#43;09:00</pre>
+
+   <table id="ffufreport">
+        <thead>
+        <div style="display:none">
+|result_raw|StatusCode|Input|Position|ContentLength|ContentWords|ContentLines|
+        </div>
+          <tr>
+              <th>Status</th>
+              <th>FUZZ</th>
+
+			  <th>URL</th>
+			  <th>Redirect location</th>
+              <th>Position</th>
+              <th>Length</th>
+              <th>Words</th>
+			  <th>Lines</th>
+			  <th>Type</th>
+        <th>Duration</th>
+			  <th>Resultfile</th>
+          </tr>
+        </thead>
+
+        <tbody>
+			
+                <div style="display:none">
+|result_raw|200|.|http://siteisup.htb/dev/.||47|0|1|1|text/html; charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.">http://siteisup.htb/dev/.</a></td>
+                    <td><a href=""></a></td>
+                    <td>47</td>
+                    <td>0</td>
+                    <td>1</td>
+					<td>1</td>
+					<td>text/html; charset=UTF-8</td>
+          <td>4.081101082s</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/|http://siteisup.htb/dev/.git/||659|2884|191|27|text/html;charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/">http://siteisup.htb/dev/.git/</a></td>
+                    <td><a href=""></a></td>
+                    <td>659</td>
+                    <td>2884</td>
+                    <td>191</td>
+					<td>27</td>
+					<td>text/html;charset=UTF-8</td>
+          <td>186.163576ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.git/.php|http://siteisup.htb/dev/.git/.php||660|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.git/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/.php">http://siteisup.htb/dev/.git/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>660</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.176206ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/branches/|http://siteisup.htb/dev/.git/branches/||665|772|52|16|text/html;charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/branches/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/branches/">http://siteisup.htb/dev/.git/branches/</a></td>
+                    <td><a href=""></a></td>
+                    <td>665</td>
+                    <td>772</td>
+                    <td>52</td>
+					<td>16</td>
+					<td>text/html;charset=UTF-8</td>
+          <td>181.09072ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.git/branches/.php|http://siteisup.htb/dev/.git/branches/.php||666|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.git/branches/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/branches/.php">http://siteisup.htb/dev/.git/branches/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>666</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.230985ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/config|http://siteisup.htb/dev/.git/config||667|298|23|14||
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/config</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/config">http://siteisup.htb/dev/.git/config</a></td>
+                    <td><a href=""></a></td>
+                    <td>667</td>
+                    <td>298</td>
+                    <td>23</td>
+					<td>14</td>
+					<td></td>
+          <td>181.231489ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/description|http://siteisup.htb/dev/.git/description||669|73|10|2||
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/description</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/description">http://siteisup.htb/dev/.git/description</a></td>
+                    <td><a href=""></a></td>
+                    <td>669</td>
+                    <td>73</td>
+                    <td>10</td>
+					<td>2</td>
+					<td></td>
+          <td>180.867648ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.git/hooks/.php|http://siteisup.htb/dev/.git/hooks/.php||674|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.git/hooks/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/hooks/.php">http://siteisup.htb/dev/.git/hooks/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>674</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.691134ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/index|http://siteisup.htb/dev/.git/index||675|521|4|3||
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/index</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/index">http://siteisup.htb/dev/.git/index</a></td>
+                    <td><a href=""></a></td>
+                    <td>675</td>
+                    <td>521</td>
+                    <td>4</td>
+					<td>3</td>
+					<td></td>
+          <td>181.369191ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/hooks/|http://siteisup.htb/dev/.git/hooks/||673|3625|214|29|text/html;charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/hooks/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/hooks/">http://siteisup.htb/dev/.git/hooks/</a></td>
+                    <td><a href=""></a></td>
+                    <td>673</td>
+                    <td>3625</td>
+                    <td>214</td>
+					<td>29</td>
+					<td>text/html;charset=UTF-8</td>
+          <td>183.258904ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.git/info/.php|http://siteisup.htb/dev/.git/info/.php||678|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.git/info/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/info/.php">http://siteisup.htb/dev/.git/info/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>678</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.639764ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/info/|http://siteisup.htb/dev/.git/info/||677|959|65|17|text/html;charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/info/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/info/">http://siteisup.htb/dev/.git/info/</a></td>
+                    <td><a href=""></a></td>
+                    <td>677</td>
+                    <td>959</td>
+                    <td>65</td>
+					<td>17</td>
+					<td>text/html;charset=UTF-8</td>
+          <td>181.508ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.git/logs/.php|http://siteisup.htb/dev/.git/logs/.php||684|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.git/logs/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/logs/.php">http://siteisup.htb/dev/.git/logs/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>684</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.419706ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/info/exclude|http://siteisup.htb/dev/.git/info/exclude||681|240|38|7||
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/info/exclude</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/info/exclude">http://siteisup.htb/dev/.git/info/exclude</a></td>
+                    <td><a href=""></a></td>
+                    <td>681</td>
+                    <td>240</td>
+                    <td>38</td>
+					<td>7</td>
+					<td></td>
+          <td>182.668983ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|.git/logs/refs|http://siteisup.htb/dev/.git/logs/refs|http://siteisup.htb/dev/.git/logs/refs/|687|325|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>.git/logs/refs</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs">http://siteisup.htb/dev/.git/logs/refs</a></td>
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs/">http://siteisup.htb/dev/.git/logs/refs/</a></td>
+                    <td>687</td>
+                    <td>325</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>182.595712ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|.git/logs/refs/heads|http://siteisup.htb/dev/.git/logs/refs/heads|http://siteisup.htb/dev/.git/logs/refs/heads/|689|331|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>.git/logs/refs/heads</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs/heads">http://siteisup.htb/dev/.git/logs/refs/heads</a></td>
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs/heads/">http://siteisup.htb/dev/.git/logs/refs/heads/</a></td>
+                    <td>689</td>
+                    <td>331</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>182.925737ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/logs/|http://siteisup.htb/dev/.git/logs/||683|1143|77|18|text/html;charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/logs/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/logs/">http://siteisup.htb/dev/.git/logs/</a></td>
+                    <td><a href=""></a></td>
+                    <td>683</td>
+                    <td>1143</td>
+                    <td>77</td>
+					<td>18</td>
+					<td>text/html;charset=UTF-8</td>
+          <td>184.891325ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|.git/logs/refs/remotes|http://siteisup.htb/dev/.git/logs/refs/remotes|http://siteisup.htb/dev/.git/logs/refs/remotes/|693|333|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>.git/logs/refs/remotes</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs/remotes">http://siteisup.htb/dev/.git/logs/refs/remotes</a></td>
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs/remotes/">http://siteisup.htb/dev/.git/logs/refs/remotes/</a></td>
+                    <td>693</td>
+                    <td>333</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.76117ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|.git/logs/refs/remotes/origin|http://siteisup.htb/dev/.git/logs/refs/remotes/origin|http://siteisup.htb/dev/.git/logs/refs/remotes/origin/|695|340|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>.git/logs/refs/remotes/origin</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs/remotes/origin">http://siteisup.htb/dev/.git/logs/refs/remotes/origin</a></td>
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs/remotes/origin/">http://siteisup.htb/dev/.git/logs/refs/remotes/origin/</a></td>
+                    <td>695</td>
+                    <td>340</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.748347ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/logs/refs/remotes/origin/HEAD|http://siteisup.htb/dev/.git/logs/refs/remotes/origin/HEAD||697|179|8|2||
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/logs/refs/remotes/origin/HEAD</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/logs/refs/remotes/origin/HEAD">http://siteisup.htb/dev/.git/logs/refs/remotes/origin/HEAD</a></td>
+                    <td><a href=""></a></td>
+                    <td>697</td>
+                    <td>179</td>
+                    <td>8</td>
+					<td>2</td>
+					<td></td>
+          <td>181.240487ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.git/objects/.php|http://siteisup.htb/dev/.git/objects/.php||702|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.git/objects/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/objects/.php">http://siteisup.htb/dev/.git/objects/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>702</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.207388ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/packed-refs|http://siteisup.htb/dev/.git/packed-refs||703|112|8|3||
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/packed-refs</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/packed-refs">http://siteisup.htb/dev/.git/packed-refs</a></td>
+                    <td><a href=""></a></td>
+                    <td>703</td>
+                    <td>112</td>
+                    <td>8</td>
+					<td>3</td>
+					<td></td>
+          <td>182.101362ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/objects/|http://siteisup.htb/dev/.git/objects/||701|1150|76|18|text/html;charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/objects/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/objects/">http://siteisup.htb/dev/.git/objects/</a></td>
+                    <td><a href=""></a></td>
+                    <td>701</td>
+                    <td>1150</td>
+                    <td>76</td>
+					<td>18</td>
+					<td>text/html;charset=UTF-8</td>
+          <td>183.205023ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.git/refs/.php|http://siteisup.htb/dev/.git/refs/.php||706|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.git/refs/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/refs/.php">http://siteisup.htb/dev/.git/refs/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>706</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.919622ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/refs/|http://siteisup.htb/dev/.git/refs/||705|1342|88|19|text/html;charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/refs/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/refs/">http://siteisup.htb/dev/.git/refs/</a></td>
+                    <td><a href=""></a></td>
+                    <td>705</td>
+                    <td>1342</td>
+                    <td>88</td>
+					<td>19</td>
+					<td>text/html;charset=UTF-8</td>
+          <td>183.135731ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|.git/refs/heads|http://siteisup.htb/dev/.git/refs/heads|http://siteisup.htb/dev/.git/refs/heads/|707|326|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>.git/refs/heads</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/refs/heads">http://siteisup.htb/dev/.git/refs/heads</a></td>
+                    <td><a href="http://siteisup.htb/dev/.git/refs/heads/">http://siteisup.htb/dev/.git/refs/heads/</a></td>
+                    <td>707</td>
+                    <td>326</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.531243ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|.git/refs/remotes|http://siteisup.htb/dev/.git/refs/remotes|http://siteisup.htb/dev/.git/refs/remotes/|711|328|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>.git/refs/remotes</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/refs/remotes">http://siteisup.htb/dev/.git/refs/remotes</a></td>
+                    <td><a href="http://siteisup.htb/dev/.git/refs/remotes/">http://siteisup.htb/dev/.git/refs/remotes/</a></td>
+                    <td>711</td>
+                    <td>328</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.450973ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|.git/refs/remotes/origin|http://siteisup.htb/dev/.git/refs/remotes/origin|http://siteisup.htb/dev/.git/refs/remotes/origin/|713|335|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>.git/refs/remotes/origin</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/refs/remotes/origin">http://siteisup.htb/dev/.git/refs/remotes/origin</a></td>
+                    <td><a href="http://siteisup.htb/dev/.git/refs/remotes/origin/">http://siteisup.htb/dev/.git/refs/remotes/origin/</a></td>
+                    <td>713</td>
+                    <td>335</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.799138ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|.git/refs/remotes/origin/HEAD|http://siteisup.htb/dev/.git/refs/remotes/origin/HEAD||715|30|2|2||
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>.git/refs/remotes/origin/HEAD</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/refs/remotes/origin/HEAD">http://siteisup.htb/dev/.git/refs/remotes/origin/HEAD</a></td>
+                    <td><a href=""></a></td>
+                    <td>715</td>
+                    <td>30</td>
+                    <td>2</td>
+					<td>2</td>
+					<td></td>
+          <td>180.349432ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|.git/refs/tags|http://siteisup.htb/dev/.git/refs/tags|http://siteisup.htb/dev/.git/refs/tags/|719|325|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>.git/refs/tags</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.git/refs/tags">http://siteisup.htb/dev/.git/refs/tags</a></td>
+                    <td><a href="http://siteisup.htb/dev/.git/refs/tags/">http://siteisup.htb/dev/.git/refs/tags/</a></td>
+                    <td>719</td>
+                    <td>325</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.513167ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.php|http://siteisup.htb/dev/.htaccess.php||850|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.php">http://siteisup.htb/dev/.htaccess.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>850</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.929823ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess|http://siteisup.htb/dev/.htaccess||849|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess">http://siteisup.htb/dev/.htaccess</a></td>
+                    <td><a href=""></a></td>
+                    <td>849</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.084878ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-dev|http://siteisup.htb/dev/.htaccess-dev||851|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-dev</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess-dev">http://siteisup.htb/dev/.htaccess-dev</a></td>
+                    <td><a href=""></a></td>
+                    <td>851</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.267126ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-dev.php|http://siteisup.htb/dev/.htaccess-dev.php||852|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-dev.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess-dev.php">http://siteisup.htb/dev/.htaccess-dev.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>852</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.216771ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-local|http://siteisup.htb/dev/.htaccess-local||853|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-local</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess-local">http://siteisup.htb/dev/.htaccess-local</a></td>
+                    <td><a href=""></a></td>
+                    <td>853</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.18275ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-local.php|http://siteisup.htb/dev/.htaccess-local.php||854|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-local.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess-local.php">http://siteisup.htb/dev/.htaccess-local.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>854</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.1907ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-marco.php|http://siteisup.htb/dev/.htaccess-marco.php||856|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-marco.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess-marco.php">http://siteisup.htb/dev/.htaccess-marco.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>856</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.899283ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-marco|http://siteisup.htb/dev/.htaccess-marco||855|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-marco</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess-marco">http://siteisup.htb/dev/.htaccess-marco</a></td>
+                    <td><a href=""></a></td>
+                    <td>855</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.881277ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.bak|http://siteisup.htb/dev/.htaccess.bak||857|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.bak</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.bak">http://siteisup.htb/dev/.htaccess.bak</a></td>
+                    <td><a href=""></a></td>
+                    <td>857</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.90003ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.bak.php|http://siteisup.htb/dev/.htaccess.bak.php||858|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.bak.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.bak.php">http://siteisup.htb/dev/.htaccess.bak.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>858</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.932398ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.bak1|http://siteisup.htb/dev/.htaccess.bak1||859|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.bak1</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.bak1">http://siteisup.htb/dev/.htaccess.bak1</a></td>
+                    <td><a href=""></a></td>
+                    <td>859</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.75968ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.bak1.php|http://siteisup.htb/dev/.htaccess.bak1.php||860|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.bak1.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.bak1.php">http://siteisup.htb/dev/.htaccess.bak1.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>860</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.813809ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.inc.php|http://siteisup.htb/dev/.htaccess.inc.php||862|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.inc.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.inc.php">http://siteisup.htb/dev/.htaccess.inc.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>862</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.821623ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.inc|http://siteisup.htb/dev/.htaccess.inc||861|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.inc</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.inc">http://siteisup.htb/dev/.htaccess.inc</a></td>
+                    <td><a href=""></a></td>
+                    <td>861</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.865956ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.old|http://siteisup.htb/dev/.htaccess.old||863|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.old</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.old">http://siteisup.htb/dev/.htaccess.old</a></td>
+                    <td><a href=""></a></td>
+                    <td>863</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.944528ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.old.php|http://siteisup.htb/dev/.htaccess.old.php||864|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.old.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.old.php">http://siteisup.htb/dev/.htaccess.old.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>864</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.925856ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.orig.php|http://siteisup.htb/dev/.htaccess.orig.php||866|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.orig.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.orig.php">http://siteisup.htb/dev/.htaccess.orig.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>866</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.843485ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.orig|http://siteisup.htb/dev/.htaccess.orig||865|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.orig</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.orig">http://siteisup.htb/dev/.htaccess.orig</a></td>
+                    <td><a href=""></a></td>
+                    <td>865</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.00236ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.sample.php|http://siteisup.htb/dev/.htaccess.sample.php||868|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.sample.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.sample.php">http://siteisup.htb/dev/.htaccess.sample.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>868</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.092934ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.sample|http://siteisup.htb/dev/.htaccess.sample||867|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.sample</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.sample">http://siteisup.htb/dev/.htaccess.sample</a></td>
+                    <td><a href=""></a></td>
+                    <td>867</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.136292ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.save|http://siteisup.htb/dev/.htaccess.save||869|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.save</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.save">http://siteisup.htb/dev/.htaccess.save</a></td>
+                    <td><a href=""></a></td>
+                    <td>869</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.819194ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.save.php|http://siteisup.htb/dev/.htaccess.save.php||870|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.save.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.save.php">http://siteisup.htb/dev/.htaccess.save.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>870</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.814609ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.txt|http://siteisup.htb/dev/.htaccess.txt||871|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.txt</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.txt">http://siteisup.htb/dev/.htaccess.txt</a></td>
+                    <td><a href=""></a></td>
+                    <td>871</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.315964ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.txt.php|http://siteisup.htb/dev/.htaccess.txt.php||872|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.txt.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess.txt.php">http://siteisup.htb/dev/.htaccess.txt.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>872</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.231938ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess/.php|http://siteisup.htb/dev/.htaccess/.php||874|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess/.php">http://siteisup.htb/dev/.htaccess/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>874</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.136299ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess/|http://siteisup.htb/dev/.htaccess/||873|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccess/">http://siteisup.htb/dev/.htaccess/</a></td>
+                    <td><a href=""></a></td>
+                    <td>873</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.24933ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessBAK|http://siteisup.htb/dev/.htaccessBAK||875|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessBAK</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccessBAK">http://siteisup.htb/dev/.htaccessBAK</a></td>
+                    <td><a href=""></a></td>
+                    <td>875</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.502205ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessBAK.php|http://siteisup.htb/dev/.htaccessBAK.php||876|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessBAK.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccessBAK.php">http://siteisup.htb/dev/.htaccessBAK.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>876</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.117201ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessOLD2.php|http://siteisup.htb/dev/.htaccessOLD2.php||880|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessOLD2.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccessOLD2.php">http://siteisup.htb/dev/.htaccessOLD2.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>880</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.706983ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htm.php|http://siteisup.htb/dev/.htm.php||882|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htm.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htm.php">http://siteisup.htb/dev/.htm.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>882</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.729232ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessOLD|http://siteisup.htb/dev/.htaccessOLD||877|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessOLD</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccessOLD">http://siteisup.htb/dev/.htaccessOLD</a></td>
+                    <td><a href=""></a></td>
+                    <td>877</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.154537ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.html|http://siteisup.htb/dev/.html||883|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.html</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.html">http://siteisup.htb/dev/.html</a></td>
+                    <td><a href=""></a></td>
+                    <td>883</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.905012ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.html.php|http://siteisup.htb/dev/.html.php||884|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.html.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.html.php">http://siteisup.htb/dev/.html.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>884</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.827331ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessOLD2|http://siteisup.htb/dev/.htaccessOLD2||879|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessOLD2</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccessOLD2">http://siteisup.htb/dev/.htaccessOLD2</a></td>
+                    <td><a href=""></a></td>
+                    <td>879</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.186419ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd.bak.php|http://siteisup.htb/dev/.htpasswd.bak.php||888|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd.bak.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htpasswd.bak.php">http://siteisup.htb/dev/.htpasswd.bak.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>888</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.706816ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd-old.php|http://siteisup.htb/dev/.htpasswd-old.php||886|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd-old.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htpasswd-old.php">http://siteisup.htb/dev/.htpasswd-old.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>886</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.977349ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd/.php|http://siteisup.htb/dev/.htpasswd/.php||892|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htpasswd/.php">http://siteisup.htb/dev/.htpasswd/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>892</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.137006ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.httr-oauth|http://siteisup.htb/dev/.httr-oauth||893|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.httr-oauth</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.httr-oauth">http://siteisup.htb/dev/.httr-oauth</a></td>
+                    <td><a href=""></a></td>
+                    <td>893</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.113918ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd-old|http://siteisup.htb/dev/.htpasswd-old||885|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd-old</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htpasswd-old">http://siteisup.htb/dev/.htpasswd-old</a></td>
+                    <td><a href=""></a></td>
+                    <td>885</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.248029ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd.bak|http://siteisup.htb/dev/.htpasswd.bak||887|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd.bak</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htpasswd.bak">http://siteisup.htb/dev/.htpasswd.bak</a></td>
+                    <td><a href=""></a></td>
+                    <td>887</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.402951ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htm|http://siteisup.htb/dev/.htm||881|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htm</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htm">http://siteisup.htb/dev/.htm</a></td>
+                    <td><a href=""></a></td>
+                    <td>881</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>182.176863ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd.inc|http://siteisup.htb/dev/.htpasswd.inc||889|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd.inc</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htpasswd.inc">http://siteisup.htb/dev/.htpasswd.inc</a></td>
+                    <td><a href=""></a></td>
+                    <td>889</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.277519ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd/|http://siteisup.htb/dev/.htpasswd/||891|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htpasswd/">http://siteisup.htb/dev/.htpasswd/</a></td>
+                    <td><a href=""></a></td>
+                    <td>891</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.259048ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessOLD.php|http://siteisup.htb/dev/.htaccessOLD.php||878|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessOLD.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.htaccessOLD.php">http://siteisup.htb/dev/.htaccessOLD.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>878</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>182.828357ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.httr-oauth.php|http://siteisup.htb/dev/.httr-oauth.php||894|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.httr-oauth.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.httr-oauth.php">http://siteisup.htb/dev/.httr-oauth.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>894</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>180.939238ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.php|http://siteisup.htb/dev/.php||1331|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/.php">http://siteisup.htb/dev/.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>1331</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>181.102336ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|/.php|http://siteisup.htb/dev//.php||1940|277|20|10|text/html; charset=iso-8859-1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>/.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev//.php">http://siteisup.htb/dev//.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>1940</td>
+                    <td>277</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+          <td>299.951291ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|/|http://siteisup.htb/dev//||1939|0|1|1|text/html; charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>/</td>
+                    
+                    <td><a href="http://siteisup.htb/dev//">http://siteisup.htb/dev//</a></td>
+                    <td><a href=""></a></td>
+                    <td>1939</td>
+                    <td>0</td>
+                    <td>1</td>
+					<td>1</td>
+					<td>text/html; charset=UTF-8</td>
+          <td>302.11735ms</td>
+                    <td></td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|index.php|http://siteisup.htb/dev/index.php||14011|0|1|1|text/html; charset=UTF-8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>index.php</td>
+                    
+                    <td><a href="http://siteisup.htb/dev/index.php">http://siteisup.htb/dev/index.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>14011</td>
+                    <td>0</td>
+                    <td>1</td>
+					<td>1</td>
+					<td>text/html; charset=UTF-8</td>
+          <td>182.482459ms</td>
+                    <td></td>
+                </tr>
+            
+        </tbody>
+      </table>
+
+        </div>
+        <br /><br />
+      </div>
+    </main>
+
+    
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#ffufreport').DataTable(
+            {
+                "aLengthMenu": [
+                    [250, 500, 1000, 2500, -1],
+                    [250, 500, 1000, 2500, "All"]
+                ]
+            }
+        )
+        $('select').formSelect();
+        });
+    </script>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+  </body>
+</html>
+
+	

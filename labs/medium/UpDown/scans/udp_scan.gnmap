@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Thu Sep 22 22:02:22 2022 as: nmap -Pn -sU -sC -oA udp_scan 10.10.11.177
+Host: 10.10.11.177 (updown.htb)	Status: Up
+Host: 10.10.11.177 (updown.htb)	Ports: 68/open|filtered/udp//dhcpc///, 19639/open|filtered/udp//unknown///	Ignored State: closed (998)
+# Nmap done at Thu Sep 22 22:20:19 2022 -- 1 IP address (1 host up) scanned in 1077.24 seconds
