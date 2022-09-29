@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun Sep 18 16:26:52 2022 as: nmap -Pn -sC -T4 -oA full_scan -p- 10.10.11.166 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sC -T4 -oA full_scan -p- 10.10.11.166" start="1663486012" startstr="Sun Sep 18 16:26:52 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1663486012" endtime="1663486879"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.166" addrtype="ipv4"/>
+<hostnames>
+<hostname name="debian.localdomain" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="reset" count="65531" proto="tcp" ports="1-21,23-24,26-52,54-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="&#xa;  2048 61:ff:29:3b:36:bd:9d:ac:fb:de:1f:56:88:4c:ae:2d (RSA)&#xa;  256 9e:cd:f2:40:61:96:ea:21:a6:ce:26:02:af:75:9a:78 (ECDSA)&#xa;  256 72:93:f9:11:58:de:34:ad:12:b5:4b:4a:73:64:b9:70 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC5Rh57OmAndXFukHce0Tr4BL8CWC8yACwWdu8VZcBPGuMUH8VkvzqseeC8MYxt5SPL1aJmAsZSgOUreAJNlYNBBKjMoFwyDdArWhqDThlgBf6aqwqMRo3XWIcbQOBkrisgqcPnRKlwh+vqArsj5OAZaUq8zs7Q3elE6HrDnj779JHCc5eba+DR+Cqk1u4JxfC6mGsaNMAXoaRKsAYlwf4Yjhonl6A6MkWszz7t9q5r2bImuYAC0cvgiHJdgLcr0WJh+lV8YIkPyya1vJFp1gN4Pg7I6CmMaiWSMgSem5aVlKmrLMX10MWhewnyuH2ekMFXUKJ8wv4DgifiAIvd6AGR</elem>
+<elem key="fingerprint">61ff293b36bd9dacfbde1f56884cae2d</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAoXvyMKuWhQvWx52EFXK9ytX/pGmjZptG8Kb+DOgKcGeBgGPKX3ZpryuGR44av0WnKP0gnRLWk7UCbqY3mxXU0=</elem>
+<elem key="fingerprint">9ecdf2406196ea21a6ce2602af759a78</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIGY1WZWn9xuvXhfxFFm82J9eRGNYJ9NnfzECUm0faUXm</elem>
+<elem key="fingerprint">7293f91158de34ad12b54b4a7364b970</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="debian.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="domain" method="table" conf="3"/><script id="dns-nsid" output="&#xa;  bind.version: 9.11.5-P4-5.1+deb10u7-Debian"><elem key="bind.version">9.11.5-P4-5.1+deb10u7-Debian</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/><script id="http-title" output="Coming Soon - Start Bootstrap Theme"><elem key="title">Coming Soon - Start Bootstrap Theme</elem>
+</script></port>
+</ports>
+<times srtt="181166" rttvar="262" to="182214"/>
+</host>
+<runstats><finished time="1663486879" timestr="Sun Sep 18 16:41:19 2022" summary="Nmap done at Sun Sep 18 16:41:19 2022; 1 IP address (1 host up) scanned in 866.72 seconds" elapsed="866.72" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

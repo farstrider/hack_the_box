@@ -1,0 +1,19 @@
+# Nmap 7.92 scan initiated Sun Sep 18 16:26:52 2022 as: nmap -Pn -sC -T4 -oA full_scan -p- 10.10.11.166
+Nmap scan report for debian.localdomain (10.10.11.166)
+Host is up (0.18s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-hostkey: 
+|   2048 61:ff:29:3b:36:bd:9d:ac:fb:de:1f:56:88:4c:ae:2d (RSA)
+|   256 9e:cd:f2:40:61:96:ea:21:a6:ce:26:02:af:75:9a:78 (ECDSA)
+|_  256 72:93:f9:11:58:de:34:ad:12:b5:4b:4a:73:64:b9:70 (ED25519)
+25/tcp open  smtp
+|_smtp-commands: debian.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING
+53/tcp open  domain
+| dns-nsid: 
+|_  bind.version: 9.11.5-P4-5.1+deb10u7-Debian
+80/tcp open  http
+|_http-title: Coming Soon - Start Bootstrap Theme
+
+# Nmap done at Sun Sep 18 16:41:19 2022 -- 1 IP address (1 host up) scanned in 866.72 seconds

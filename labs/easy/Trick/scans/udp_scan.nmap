@@ -1,0 +1,13 @@
+# Nmap 7.92 scan initiated Sun Sep 18 07:30:09 2022 as: nmap -Pn -sU -sC -oA udp_scan 10.10.11.166
+Nmap scan report for 10.10.11.166
+Host is up (0.18s latency).
+Not shown: 996 closed udp ports (port-unreach)
+PORT     STATE         SERVICE
+53/udp   open          domain
+| dns-nsid: 
+|_  bind.version: 9.11.5-P4-5.1+deb10u7-Debian
+68/udp   open|filtered dhcpc
+631/udp  open|filtered ipp
+5353/udp open|filtered zeroconf
+
+# Nmap done at Sun Sep 18 07:48:58 2022 -- 1 IP address (1 host up) scanned in 1128.66 seconds

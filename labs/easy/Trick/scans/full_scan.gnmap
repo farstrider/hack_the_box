@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sun Sep 18 16:26:52 2022 as: nmap -Pn -sC -T4 -oA full_scan -p- 10.10.11.166
+Host: 10.10.11.166 (debian.localdomain)	Status: Up
+Host: 10.10.11.166 (debian.localdomain)	Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 53/open/tcp//domain///, 80/open/tcp//http///	Ignored State: closed (65531)
+# Nmap done at Sun Sep 18 16:41:19 2022 -- 1 IP address (1 host up) scanned in 866.72 seconds
