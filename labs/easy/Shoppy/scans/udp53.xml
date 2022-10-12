@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Mon Oct  3 08:40:02 2022 as: nmap -Pn -sU -sC -oA udp53 -p 53 10.10.11.180 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sU -sC -oA udp53 -p 53 10.10.11.180" start="1664754002" startstr="Mon Oct  3 08:40:02 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="1" services="53"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1664754003" endtime="1664754003"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.180" addrtype="ipv4"/>
+<hostnames>
+<hostname name="shoppy.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="udp" portid="53"><state state="closed" reason="port-unreach" reason_ttl="63"/><service name="domain" method="table" conf="3"/></port>
+</ports>
+<times srtt="181791" rttvar="181791" to="908955"/>
+</host>
+<runstats><finished time="1664754003" timestr="Mon Oct  3 08:40:03 2022" summary="Nmap done at Mon Oct  3 08:40:03 2022; 1 IP address (1 host up) scanned in 0.56 seconds" elapsed="0.56" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Mon Oct  3 08:40:02 2022 as: nmap -Pn -sU -sC -oA udp53 -p 53 10.10.11.180
+Host: 10.10.11.180 (shoppy.htb)	Status: Up
+Host: 10.10.11.180 (shoppy.htb)	Ports: 53/closed/udp//domain///
+# Nmap done at Mon Oct  3 08:40:03 2022 -- 1 IP address (1 host up) scanned in 0.56 seconds
